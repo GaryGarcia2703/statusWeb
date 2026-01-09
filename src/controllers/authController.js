@@ -12,6 +12,12 @@ export class UserController {
     res.render("paginas/register");
   };
 
+  static showAbout = (req, res) => {
+    res.render("paginas/sobre", {
+      nombre: "Gary García"
+    })
+  }
+
   // Crear usuario
   static registerUser = async (req, res) => {
     const { username, password } = req.body;

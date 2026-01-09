@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/* =========================
+   FUENTES
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Open+Sans:wght@300..800&display=swap');
+
+/* =========================
+   RESET BÁSICO
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+    font-family: 'Open Sans', system-ui, sans-serif;
+    background-color: azure;
+    background-image: url(/imagens/profile/2w.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+
+    min-height: 100vh;
+    padding: 40px 20px;
+
+    text-align: center;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+h1 {
+    font-family: 'BBH Hegarty';
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   TEXTO
+========================= */
+p {
+    max-width: 900px;
+    margin: 0 auto 15px auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* =========================
+   LISTA DE TECNOLOGÍAS
+========================= */
+ul {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 25px;
+    text-align: left;
+}
+
+li {
+    font-size: 1.05em;
+    margin-bottom: 8px;
+}
+
+footer {
+    margin-top: 130px;
+}
+
+span {
+    font-weight: bolder;
+}

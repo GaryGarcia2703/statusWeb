@@ -1,0 +1,88 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    background-color: azure;
+    background-image: url(/imagens/profile/2w.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 9px 6px 1px #0000006b;
+}
+
+button {
+    margin: 10px;
+    /* Dimensiones: Un poco más ancho pero manteniendo el estilo pequeño */
+    width: 250px;
+    padding: 10px 0; /* Ajuste para que se vea delgado y elegante */
+    font-size: 1.1em; 
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF; 
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4); 
+
+    /* Forma y Contorno */
+    border-radius: 20px; 
+    border: 1px solid #2D7A1A; /* Verde oscuro para el borde */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; 
+    
+    /* Gradiente (Verde Frutiger con 3 paradas) */
+    background: #4CCB28;
+    background: linear-gradient(
+        to bottom, 
+        #A7E87D 0%,    /* Verde claro/lima en el borde superior */
+        #4CCB28 50%,   /* Verde medio vibrante */
+        #2D8A1A 100%   /* Verde base oscuro */
+    );
+
+    /* Sombra blanca interna (efecto vidrio) y sombra exterior */
+    box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.7), 
+        0 3px 6px rgba(0, 0, 0, 0.25);          
+}
+
+button:hover {
+    /* Iluminación general al pasar el mouse */
+    background: linear-gradient(
+        to bottom, 
+        #B9F195 0%,    /* Más brillo arriba */
+        #5FE03A 50%,   /* Centro más saturado */
+        #35A31E 100%   /* Base un poco más clara que el reposo */
+    );
+    box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.8), 
+        0 5px 10px rgba(0, 0, 0, 0.35); 
+}
+
+button:active {
+    /* Efecto de hundido invirtiendo el gradiente */
+    background: linear-gradient(
+        to bottom, 
+        #2D8A1A 0%,     
+        #4CCB28 100%    
+    );
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4); 
+    transform: translateY(1px); 
+    border: 1px solid #1B4D10; 
+}
