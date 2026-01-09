@@ -5,7 +5,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 import authRoutes from "./routes/authRoutes.js";
-import { connectDB } from "./config/database.js";
+import { sequelize, connectDB } from "./config/database.js";
 
 import SequelizeStoreInit from "connect-session-sequelize";
 
