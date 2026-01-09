@@ -7,6 +7,15 @@ import { fileURLToPath } from "url";
 import authRoutes from "./routes/authRoutes.js";
 import { connectDB } from "./config/database.js";
 
+import SequelizeStoreInit from "connect-session-sequelize";
+
+const SequelizeStore = SequelizeStoreInit(session.Store);
+
+const sessionStore = new SequelizeStore({
+  db: sequelize,
+});
+
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -43,10 +52,14 @@ app.use(express.static(path.join(__dirname, "../public")));
    Sesiones
 ======================= */
 app.use(session({
-  secret: process.env.SESSION_SECRET || "dev_secret",
+  secret: process.env.SESSION_SECRET,
   resave: false,
   saveUninitialized: false,
-  cookie: { secure: false }
+  store: sessionStore,
+  cookie: {
+    secure: false, // Railway usa proxy HTTPS
+    maxAge: 1000 * 60 * 60 * 24 // 1 día
+  }
 }));
 
 /* =======================
@@ -61,6 +74,8 @@ const PORT = process.env.PORT || 3000;
 
 (async () => {
   await connectDB();
+  sessionStore.sync();
+
 
   app.listen(PORT, () => {
     console.log(`Servidor corriendo en puerto ${PORT}`);
