@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*
+ Celulares pequenos até 320px
+ Celulares médios ≥ 375px
+ Tablets médios ≥ 768px
+ Desktops ≥ 1400px
+ Telas grandes ≥ 1920px
+ */
+
+@media screen and (min-width:992px) {
+    html, body {
+        background-image: linear-gradient(#FFFFFF, #99aab8 );
+    }
+    section {
+        width: 900px;
+        height: 550px;
+    }
+
+    div#img {
+        background-image: url(../../imagens/hot-flip.jpeg);
+        background-position: center center;
+        float: right;
+        width: 50%;
+        height: 100%;
+        
+    }
+
+    form {
+        float: left;
+        width: 50%;
+    }
+
+    input#username {
+        width: 358.7px;
+    }
+
+    input#senha {
+        width: 358.7px;
+    }
+
+    input#entrar {
+        width: 349px;
+    }
+
+    button{
+        width: 349px;
+    }
+
+    .error-message {
+        width: 97vw ;
+    }
+    
+}

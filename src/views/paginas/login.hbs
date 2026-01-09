@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/login/style.css">
+    <link rel="stylesheet" href="/estilos/login/media-query-tablet.css">
+    <link rel="stylesheet" href="/estilos/login/media-query-pc.css">
+    <link rel="shortcut icon" href="/favicon/Sonicfavi.png" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+    {{#if error}}
+        <p class="error-message">{{error}}</p>
+    {{/if}}
+
+    <main> 
+        <section>
+            <div id="img"></div>
+        
+            <h1>Login</h1>
+            <p>Bienvenido de vuelta!</p>
+            <form action="/login" method="post">
+
+                <p class="color">
+                    <img src="/favicon/person_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="person icon" id="person">
+
+                    <input 
+                    type="text" 
+                    id="username" 
+                    name="username"
+                    placeholder="Nombre de usuário" 
+                    required 
+                    maxlength="16">
+                    <label for="username">Nome de Usuario</label>
+                </p>
+
+                <p class="color">
+                    <img src="/favicon/key_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="key icon" id="key"> 
+
+                    <input 
+                    type="password" 
+                    id="senha" 
+                    name="password"
+                    placeholder="tu constraseña" 
+                    required
+                    minlength="6" 
+                    maxlength="24">
+                    <label for="senha">Senha</label>
+                </p>
+
+                <p>
+                    <input type="submit" value="Entrar" id="entrar">
+                </p>
+
+                <p>
+                    <button id="crearCuenta">
+                        <a href="/register">
+                            Crear una cuenta
+                        </a>
+                    </button>
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

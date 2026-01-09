@@ -1,0 +1,29 @@
+/* DESKTOP (padrão) */
+
+/* LAPTOP */
+@media (max-width: 1279px) and (min-width: 1024px) {
+ .change-btn {
+    width: 100px;
+ }
+}
+
+/* TABLET */
+@media (max-width: 1023px) and (min-width: 768px) {
+   .change-btn {
+    width: 70px;
+ }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+      section#main-user-container {
+      min-height: 95vh;
+      height: auto;
+   }
+
+   .change-btn {
+      width: 100%;
+      max-width: none;
+      font-size: 0.95rem;
+   }
+}

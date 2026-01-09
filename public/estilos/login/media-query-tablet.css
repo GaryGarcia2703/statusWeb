@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/*
+ Celulares pequenos até 320px
+ Celulares médios ≥ 375px
+ Tablets médios ≥ 768px
+ Desktops ≥ 1400px
+ Telas grandes ≥ 1920px
+*/
+
+@media screen and (min-width:  768px) and (max-width: 992px) { /*Tablet*/
+    html, body {
+        background-image: linear-gradient(#FFFFFF, #79BBED );
+
+    }
+
+    section {
+        background-color: #C9E4F8;
+        width: 750px;
+        height: 501px;
+    }
+
+    div#img {
+        background-image: url(../../imagens/Frutiger_Aero_place.jpg);
+        background-position: center left;
+        float: left;
+        height: 100%;
+        width: 35%;
+    }
+
+    form {
+        float: right;
+        width: 65%;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.5em;
+        margin: 5px;
+    }
+
+    input#username {
+        width: 328.7px;
+    }
+
+    input#senha {
+        width: 328.7px;
+    }
+
+    input#entrar {
+        /* Dimensiones y Tipografía */
+        width: 319px;
+        font-size: 0.8em; 
+    }
+
+    #crearCuenta {
+        /* Dimensiones y Tipografía (Igual que el Delgado Anterior) */
+        width: 319px;
+        padding: 9px;
+        font-size: 0.8em;
+    } 
+
+    .error-message {
+        width: 95vw ;
+        font-size: 1.4em;
+    }
+}

@@ -1,0 +1,110 @@
+{{> profile-nav editGuardar="Editar Perfil" editarGuardarRuta="/profile/edit"}}
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/profile/dashboard.css">
+    <link rel="stylesheet" href="/estilos/profile/dashboard-media-queries.css">
+    <link rel="shortcut icon" href="public/icon/planet-icon.png" type="image/x-icon">
+    <title>Profile/dashboard</title>
+</head>
+<body>
+    
+    <section id="main-user-container">
+
+        <section id="user-profile" class="aero-panel">
+            <section id="username-section" class="aero-title">
+               <h2>@{{displayname}}</h2>
+            </section>
+
+            <section id="photo-section">
+                <img id="profile" src="/imagens/profile/King.jpg" alt="">
+            </section>
+
+            <section id="mood-section">
+                <p>Mood: {{mood}}</p>
+            </section>
+
+        </section>
+
+        <section id="user-background">
+            <!--Imagen de fondo del usuario-->
+        </section>
+    </section>
+
+    <section id="about-user-container">
+        <section id="links-socials" class="aero-panel">
+            <h2 id="title-social-links" class="aero-title">Socials links:</h2>
+
+            <div id="social-buttons-wrapper">
+
+                <div class="social-img-div">
+                    <img src="/imagens/profile/insta.jpg" alt="">
+                    <a href="{{links.instagram}}" target="_blank" class="social-button">Instagram</a>
+                </div>
+
+                <div class="social-img-div">
+                    <img src="/imagens/profile/pin.jpg" alt="">
+                    <a href="{{links.pinterest}}" target="_blank" class="social-button">Pinterest</a>
+                </div>
+
+                <div class="social-img-div">
+                    <img src="/imagens/profile/Music.png" id="music-icon" alt="">
+                    <a href="{{links.spotify}}" target="_blank" class="social-button">Spotify</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="aero-panel">
+            <section id="about-title-section" class="aero-title">
+               <h2>about me</h2>
+            </section>
+
+            <p id="bio">{{bio}}</p>
+        </section>
+    </section>
+
+    <section id="friends-interest">
+        <section id="user-interests" class="aero-panel">
+            <section id="user-interests-title-section" class="aero-title">
+                   <h2>interests</h2>
+            </section>
+        
+            <section id="interests-list">
+                {{#each interests}}
+                    <p class="interest-text">{{this.name}}</p>
+                {{/each}}
+            </section>
+        </section>
+
+        <section id="user-friends" class="aero-panel">
+            <section id="user-friends-title-section" class="aero-title">
+                   <h2>friends</h2>
+                </section>
+            
+            <section id="friends-section">
+                <div class="friend-name">
+                    <p>ihaven</p>
+                    <img src="/imagens/profile/veigar.jpg" alt="friend-pfp-1">
+                </div>
+
+                <div class="friend-name">
+                    <p>someonexd</p>
+                    <img src="/imagens/profile/rah.jpg" alt="friend-pfp-2">
+                </div>
+
+                <div class="friend-name">
+                    <p>nala_456</p>
+                    <img src="/imagens/profile/dog.jpeg" alt="friend-pfp-3">
+                </div>
+
+                <div class="friend-name">
+                    <p>cats3</p>
+                    <img src="/imagens/profile/gato.jpg" alt="friend-pfp-4">
+                </div>
+            </section>
+        </section>
+    </section>
+</body>
+</html>

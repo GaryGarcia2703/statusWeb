@@ -1,0 +1,43 @@
+<head>
+    <link rel="stylesheet" href="/estilos/partials/partial-nav.css">
+    <link rel="stylesheet" href="/estilos/partials/partial-media-queries.css">
+</head>
+
+<nav class="profile-nav">
+    <h1>StatusWeb</h1>
+
+    <!-- BOTÃO HAMBURGUER (mobile) -->
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <ul class="profile-nav-list">
+        <li>
+            <a href={{editarGuardarRuta}} class="profile-nav-item">
+                {{editGuardar}}
+            </a>
+        </li>
+
+        <li>
+            <a href="/profile/share" class="profile-nav-item">
+                Compartilhar perfil
+            </a>
+        </li>
+
+        <li>
+            <a href="/about" class="profile-nav-item">
+                Sobre
+            </a>
+        </li>
+
+        <li class="danger">
+            <a href="/" class="profile-nav-item">
+                Logout
+            </a>
+        </li>
+    </ul>
+</nav>

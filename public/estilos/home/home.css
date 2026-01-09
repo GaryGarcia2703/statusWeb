@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "funnel sans", Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  text-align: center;
+  min-height: 100vh;
+  height: auto;
+  background-image: linear-gradient(#79bbed, #7c7373);
+}
+
+main, section#img, a#entrar, a#crear {
+  transition: all 0.3s ease;
+}
+
+
+div#conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin-top: 20px;
+  background-color: #eef0f2;
+  width: 65vw;
+  height: 92.5vh;
+  border-radius: 20px;
+}
+
+section#img {
+  width: 65vw;
+  height: 40vh;
+  background-image: url(../../imagens/win7.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  background-color: rgb(28, 113, 119);
+  border-radius: 20px 20px 0px 0px;
+}
+
+h1#titulo {
+  font-family: "bbh hegarty";
+  font-size: 70px;
+}
+
+p#sub-titulo {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+div.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 50px;
+}
+
+a#entrar {
+    /* Dimensiones y Tipografía (Igual que el Delgado Anterior) */
+    width: 304px;
+    padding: 30px ;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 0.5px 0px rgba(255, 255, 255, 0.9); 
+
+    /* Forma y Contorno */
+    border-radius: 20px; 
+    border: 1px solid #004C8C; 
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; 
+    
+    /* Gradiente (Fondo Gel CASI BLANCO) */
+    background: #E6F0FF; 
+    background: linear-gradient(
+        to bottom, 
+        #F0F5FF 0%,     
+        #E6F0FF 50%,    
+        #DDE6F5 100%    
+    );
+
+    box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        0 3px 5px rgba(0, 0, 0, 0.1);          
+}
+
+a#entrar:hover {
+    /* Al pasar el ratón, se aclara aún más o se invierte ligeramente */
+    background: linear-gradient(
+        to bottom, 
+        #FFFFFF 0%,     
+        #EFF4FF 50%,
+        #E3E8F5 100%
+    );
+    /* Se intensifica la sombra para "saltar" */
+    box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.95), 
+        0 4px 8px rgba(0, 0, 0, 0.15); 
+}
+
+a#entrar:active {
+    /* Se invierte el gradiente (se oscurece la parte superior) */
+    background: linear-gradient(
+        to bottom, 
+        #DDE6F5 0%,     
+        #E6F0FF 100%    
+    );
+    /* Sombra interior fuerte y mover ligeramente hacia abajo */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(1px); 
+    border: 1px solid #003866; 
+}
+
+
+a#crear {
+    /* Dimensiones y Tipografía */
+    width: 304px;
+    padding: 30px ;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4); 
+
+    /* Forma y Contorno */
+    border-radius: 20px; 
+    border: 1px solid #0077B3; 
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; 
+    
+    background: #00BFFF;
+    background: linear-gradient(
+        to bottom, 
+        #87CEEB 0%,     
+        #00BFFF 50%,    
+        #0077B3 100%    
+    );
+
+    box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.7), 
+        0 3px 6px rgba(0, 0, 0, 0.25);        
+}
+
+a#crear:hover {
+    background: linear-gradient(
+        to bottom, 
+        #99D9F7 0%,    
+        #1AD0FF 50%,
+        #0088CC 100%
+    );
+    box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.8), 
+        0 5px 10px rgba(0, 0, 0, 0.35); 
+}
+
+a#crear:active {
+    background: linear-gradient(
+        to bottom, 
+        #0077B3 0%,     
+        #00BFFF 100%    
+    );
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4); 
+    transform: translateY(1px); 
+    border: 1px solid #004C8C; 
+}
+
+a {
+  text-decoration: none;
+}
+
+a#entrar {
+  color: #0077B3;
+}
+
+a#crear {
+  color: #FFFFFF;
+}

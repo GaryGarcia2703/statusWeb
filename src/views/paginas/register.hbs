@@ -1,0 +1,71 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/estilos/register/register.css" />
+    <link rel="stylesheet" href="/estilos/register/register-tablet.css" />
+    <link rel="stylesheet" href="/estilos/register/register-pc.css" />
+    <link
+      rel="shortcut icon"
+      href="/favicon/Sonicfavi.png"
+      type="image/x-icon"
+    />
+    <title>Sing-up</title>
+  </head>
+  <body>
+    {{#if error}}
+      <p class="error-message">{{error}}</p>
+    {{/if}}
+    <main>
+      <section>
+        <div id="img"></div>
+
+        <h1>Crear Cuenta</h1>
+        <p>Gracias por crear tu cuenta con nosotros</p>
+        <form action="/register" method="post">
+
+          <p class="color">
+            <img
+              src="/favicon/person_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+              alt="person icon"
+              id="person"
+            />
+
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Nombre de usuario"
+              required
+              maxlength="16"
+            />
+            <label for="username">Nome de Usuario</label>
+          </p>
+
+          <p class="color">
+            <img
+              src="/favicon/key_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+              alt="key icon"
+              id="key"
+            />
+
+            <input
+              type="password"
+              id="senha"
+              name="password"
+              placeholder="tu contraseña"
+              required
+              minlength="6"
+              maxlength="24"
+            />
+            <label for="senha">Senha</label>
+          </p>
+
+          <p>
+            <input type="submit" value="Crear Cuenta" id="entrar" />
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

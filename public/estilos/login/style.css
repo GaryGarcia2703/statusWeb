@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'funnel sans', Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+    background-color: #79BBED ;
+    background-attachment: fixed;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 96vw;
+}
+
+section {
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+
+    background-color: #eef0f2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.575);
+
+    width: 305px;
+    height: 550px;
+    transition: width 0.5s, height 0.5s ;
+    transition-timing-function: ease;
+
+}
+
+div#img {
+    display: block;
+    background-color: #9ddbf8;
+    background: url(../../imagens/silverp.png);
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+}
+
+form {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'BBH Hegarty';
+}
+
+p {
+    margin: 10px;
+}
+
+p > label {
+    display: none;
+}
+
+p.color {
+    border-radius: 10px;
+    background-color: #90fcf9;
+    padding-bottom: 1px;
+}                                                                                           
+
+img#person {
+    width: 35px;
+    height: 35px;
+    margin-right: -10px;
+    margin-bottom: -13px;
+}
+
+img#key {
+    width: 35px;
+    height: 35px;
+    margin-right: -10px;
+    margin-bottom: -16px;
+}
+
+input {
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+input#username {
+    background-color:#ecebe4 ;
+    width: 210.7px;
+}
+
+input#senha {
+    background-color: #ecebe4;
+    width: 210.7px;
+}
+
+input#entrar {
+    /* Dimensiones y Tipografía */
+    width: 219px;
+    font-size: 1.1em; 
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF; 
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4); 
+
+    /* Forma y Contorno */
+    border-radius: 20px; 
+    border: 1px solid #0077B3; 
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; 
+    
+    background: #00BFFF;
+    background: linear-gradient(
+        to bottom, 
+        #87CEEB 0%,     
+        #00BFFF 50%,    
+        #0077B3 100%    
+    );
+
+    box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.7), 
+        0 3px 6px rgba(0, 0, 0, 0.25);        
+}
+
+#entrar:hover {
+    background: linear-gradient(
+        to bottom, 
+        #99D9F7 0%,    
+        #1AD0FF 50%,
+        #0088CC 100%
+    );
+    box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.8), 
+        0 5px 10px rgba(0, 0, 0, 0.35); 
+}
+
+#entrar:active {
+    background: linear-gradient(
+        to bottom, 
+        #0077B3 0%,     
+        #00BFFF 100%    
+    );
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4); 
+    transform: translateY(1px); 
+    border: 1px solid #004C8C; 
+}
+
+#crearCuenta {
+    /* Dimensiones y Tipografía (Igual que el Delgado Anterior) */
+    width: 219px;
+    padding: 12px 30px; 
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    color: #004C8C; 
+    text-shadow: 0px 0.5px 0px rgba(255, 255, 255, 0.9); 
+
+    /* Forma y Contorno */
+    border-radius: 20px; 
+    border: 1px solid #004C8C; 
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; 
+    
+    /* Gradiente (Fondo Gel CASI BLANCO) */
+    background: #E6F0FF; 
+    background: linear-gradient(
+        to bottom, 
+        #F0F5FF 0%,     
+        #E6F0FF 50%,    
+        #DDE6F5 100%    
+    );
+
+    /* Sombra para elevar el botón (Efecto 3D sutil) */
+    box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.9), 
+        0 3px 5px rgba(0, 0, 0, 0.1);          
+}
+
+#crearCuenta:hover {
+    background: linear-gradient(
+        to bottom, 
+        #FFFFFF 0%,     
+        #EFF4FF 50%,
+        #E3E8F5 100%
+    );
+    box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.95), 
+        0 4px 8px rgba(0, 0, 0, 0.15); 
+}
+
+#crearCuenta:active {
+    background: linear-gradient(
+        to bottom, 
+        #DDE6F5 0%,     
+        #E6F0FF 100%    
+    );
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(1px); 
+    border: 1px solid #003866;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #0077B3;
+}
+
+/* Estilo para errores */
+.error-message {
+    width: 90vw ;
+    color: #d41323;
+    background: #df9494;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 6px;
+    text-align: center;
+}

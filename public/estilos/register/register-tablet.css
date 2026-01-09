@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/*
+ Celulares pequenos até 320px
+ Celulares médios ≥ 375px
+ Tablets médios ≥ 768px
+ Desktops ≥ 1400px
+ Telas grandes ≥ 1920px
+*/
+
+@media screen and (min-width:  768px) and (max-width: 992px) { /*Tablet*/
+    html, body {
+        background-image: linear-gradient(#FFFFFF, #FF6600 );
+
+    }
+
+    section {
+        background-color: #ffffff;
+        width: 750px;
+        height: 501px;
+    }
+
+    div#img {
+        background-image: url(../../imagens/dorfic.jpeg);
+        background-position: center left;
+        float: right;
+        height: 100%;
+        width: 40%;
+    }
+
+    form {
+        float: left;
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1em;
+        margin: 5px;
+    }
+
+    input#username {
+        width: 328.7px;
+    }
+
+    input#senha {
+        width: 328.7px;
+    }
+
+    input#entrar {
+        width: 319px;
+        border: 1px solid #CC5500; 
+    
+        background: #FF6B00;
+        background: linear-gradient(
+            to bottom, 
+            #FFAA44 0%,     
+            #FF6B00 50%,   
+            #CC5500 100%    
+        );
+    }
+
+    input#entrar:hover {
+        background: linear-gradient(
+            to bottom, 
+            #FFB95B 0%,     /* Hacer el reflejo más claro */
+            #FF7A1A 50%,
+            #D9661A 100%
+        );
+    }
+
+
+    input#entrar:active {
+        background: linear-gradient(
+            to bottom, 
+            #CC5500 0%,     
+            #FF6B00 100%    
+        );
+        border: 1px solid #8B4513; 
+    }
+    .error-message {
+        width: 95vw ;
+    }
+
+}

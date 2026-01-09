@@ -1,0 +1,109 @@
+/*laptops*/
+
+@media (max-width: 1200px) {
+
+  main {
+    width: 75vw;
+  }
+
+  section#img {
+    width: 75vw;
+  }
+
+  h1#titulo {
+    font-size: 60px;
+  }
+
+  p#sub-titulo {
+    font-size: 26px;
+  }
+}
+
+/*tablets*/
+
+@media (max-width: 768px) {
+
+  main {
+    width: 90vw;
+    height: auto;
+    padding-bottom: 120px;
+  }
+
+  section#img {
+    width: 100%;
+    height: 30vh;
+  }
+
+  h1#titulo {
+    font-size: 48px;
+  }
+
+  p#sub-titulo {
+    font-size: 22px;
+  }
+
+  div.buttons {
+    gap: 30px;
+  }
+
+  a#entrar,
+  a#crear {
+    width: 260px;
+    padding: 26px;
+    font-size: 1.3em;
+  }
+}
+
+/*móviles*/ 
+
+@media (max-width: 480px) {
+
+  /* MAIN mais estreito */
+  main {
+    width: 90vw;          /* antes: 65vw */
+    max-width: 360px;
+    height: auto;
+    border-radius: 16px;
+    padding-bottom: 120px;
+  }
+
+  /* Imagem do topo menos alta */
+  section#img {
+    width: 100%;
+    height: 28vh;
+    border-radius: 16px 16px 0 0;
+  }
+
+  /* Título menor */
+  h1#titulo {
+    font-size: 42px;
+  }
+
+  p#sub-titulo {
+    font-size: 18px;
+  }
+
+  /* Botões em coluna */
+  div.buttons {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+  }
+
+  /* BOTÃO ENTRAR – mais achatado */
+  a#entrar {
+    width: 85%;
+    padding: 18px;
+    font-size: 1.1em;
+    border-radius: 16px;
+  }
+
+  /* BOTÃO CREAR – mais achatado */
+  a#crear {
+    width: 85%;
+    padding: 18px;
+    font-size: 1.1em;
+    border-radius: 16px;
+  }
+}
+

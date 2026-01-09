@@ -1,0 +1,27 @@
+<h2>{{title}}</h2>
+
+<form method="POST">
+
+  {{#if isLinks}}
+
+    <label>Instagram</label>
+    <input type="url" name="instagram">
+
+    <label>Spotify</label>
+    <input type="url" name="spotify">
+
+    <label>Pinterest</label>
+    <input type="url" name="pinterest">
+
+  {{else}}
+
+    {{#if (eq inputType "textarea")}}
+      <textarea name="{{name}}"></textarea>
+    {{else}}
+      <input type="{{inputType}}" name="{{name}}">
+    {{/if}}
+
+  {{/if}}
+
+  <button type="submit">Guardar</button>
+</form>

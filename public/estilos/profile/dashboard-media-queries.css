@@ -1,0 +1,221 @@
+/* DESKTOP (padrão) */
+
+/* LAPTOP */
+@media (max-width: 1279px) and (min-width: 1024px) {
+
+    /* Containers principais */
+
+    section#main-user-container {
+        height: 46vh;
+    }
+    section#main-user-container,
+    section#about-user-container,
+    section#friends-interest {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+    /* PERFIL */
+    section#user-profile {
+        width: 380px; /* antes: 450px */
+        padding-bottom: 10px;
+    }
+
+
+    /* BACKGROUND TOPO */
+    section#user-background {
+        width: 53vw; /* antes: 58vw */
+        margin-right: 2vw;
+    }
+
+    /* SOCIAL LINKS */
+    section#links-socials {
+        width: 380px; /* antes: 452px */
+        height: 250px;
+    }
+
+    #social-buttons-wrapper {
+        gap: 20px; /* antes: 60px */
+    }
+
+    /* ABOUT */
+    section#about {
+        width: 50vw; /* antes: 55vw */
+        margin-right: 2vw;
+    }
+
+    /* INTERESTS */
+    section#user-interests {
+        width: 380px; /* antes: 452px */
+        height: auto;
+    }
+
+    /* FRIENDS */
+    section#user-friends {
+        width: 48vw; /* antes: 45vw */
+        margin-right: 2vw;
+    }
+
+    section#friends-section img {
+        width: 85px;
+        height: 85px;
+    }
+
+    /* ALTURAS (evitar corte vertical) */
+    section#about-user-container,
+    section#friends-interest {
+        height: auto;
+    }
+}
+/* TABLET */
+@media (max-width: 1023px) and (min-width: 768px) {
+    body {
+        margin: 0px;
+    }
+
+    section#user-profile {
+        width: 300px;
+    }
+
+    section#user-background {
+        width: 50vw;
+        margin-right: 2vw;
+    }
+
+    section#about-user-container {
+        height: auto;
+    }
+
+    section#links-socials {
+        width: 300px;
+        height: 220px;
+    }
+
+    div.social-img-div img{
+        margin-left: 22px;
+    }
+
+    div#social-buttons-wrapper {
+        gap: 10px;
+    }
+
+    a.social-button {
+        width: 80px;
+        height: 26px;
+    }
+
+    section#about {
+        width: 48vw;
+        height: 67vw;
+        margin-right: 2vw;
+    }
+
+    section#friends-interest {
+        height: auto;
+    }
+  
+
+    section#user-interests {
+        width: 300px;
+        height: auto;
+    }
+
+    section#user-friends {
+        width: 48vw;
+        margin-right: 2vw;
+    }
+
+    section#friends-section  {
+        justify-content: space-between;
+        padding: 0px;
+    }
+
+    /*redimencion imagenes de amigos*/
+    section#friends-section img {
+        width: 75px;
+        height: 75px;
+    }
+
+    div.friend-name p {
+        width: 78px;
+        height: 25px;
+        padding: 2px;
+        font-size: 1em;
+    }
+
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+
+    /* CONTENEDORES FLEX */
+    section#main-user-container,
+    section#about-user-container,
+    section#friends-interest {
+        display: flex;
+        flex-wrap: wrap;   /* 🔑 clave */
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    /* TODOS LOS BLOQUES INTERNOS */
+    section#user-profile,
+    section#user-background,
+    section#links-socials,
+    section#about,
+    section#user-interests,
+    section#user-friends {
+        width: 100%;
+        flex: 0 0 100%;   /* fuerza una columna */
+        margin: 0 0 15px 0;
+    }
+
+    /* BACKGROUND */
+    section#user-background {
+        height: 180px;
+        margin-right: 0;
+    }
+
+    /* SOCIALS */
+    section#links-socials {
+        height: auto;
+    }
+
+    #social-buttons-wrapper {
+        gap: 15px;
+        flex-wrap: wrap; /* botones también bajan */
+    }
+
+    a.social-button {
+        width: 90px;
+        height: 34px;
+        font-size: 0.9em;
+    }
+
+    section#user-friends {
+        height: auto;
+        margin-right: 0;
+    }
+
+    /* FRIENDS */
+    section#friends-section {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: auto;
+    }
+
+    section#friends-section img {
+        width: 70px;
+        height: 70px;
+        margin: 6px;
+    }
+
+    /* TÍTULOS */
+    h1 {
+        font-size: 2.6em;
+    }
+}

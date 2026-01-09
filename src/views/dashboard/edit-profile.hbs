@@ -1,0 +1,158 @@
+{{> profile-nav editGuardar="Guardar Cambios" editarGuardarRuta="/dashboard"}}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/profile/dashboard.css">
+    <link rel="stylesheet" href="/estilos/profile/dashboard-media-queries.css">
+    <link rel="stylesheet" href="/estilos/profile/edit-profile/edit-profile.css">
+    <link rel="stylesheet" href="/estilos/profile/edit-profile/edit-profile-media-query.css">
+    <link rel="shortcut icon" href="public/icon/planet-icon.png" type="image/x-icon">
+
+    <!--estilos especificos para el form edit-->
+    <link rel="stylesheet" href="/estilos/profile/edit-profile/edit-profile.css">
+    <title>Edit profile</title>
+</head>
+
+<body>
+
+<!--REALIZAR CAAMBIOS DE ID PARA BOTONES DE CAMBIOS PORQUE EL <A> EST MUY PEQUEÑO HCER ESTE CAAMBIOS-->
+    <section id="main-user-container">
+
+        <section id="user-profile" class="aero-panel">
+            <section id="username-section" class="aero-title">
+                <section>
+                    <button class="change-btn" class="no-padding">
+                        <a href="/profile/edit/displayname">
+                        Cambiar Nombre de perfil
+                        </a> 
+                    </button>
+                </section>
+
+            </section>
+
+
+            <section id="photo-section">
+                <img id="profile" src="/imagens/profile/King.jpg" alt="">
+            </section>
+
+            <section id="conteiner-foto-mood">
+                <button id="cambiar-foto-btn" class="change-btn">
+                    <a href="/profile/edit/photo" class="no-padding">
+                        Cambiar foto de perfil
+                    </a>
+                </button>
+
+                <button id="cambiar-mood-btn" class="change-btn">
+                    <a href="/profile/edit/mood" class="no-padding">
+                        Cambiar mood
+                    </a>
+                </button>
+            </section>
+
+            <section id="mood-section">
+                <p>{{mood}}</p>
+            </section>
+
+        </section>
+
+        <section id="user-background">
+            <!--Imagen de fondo del usuario-->
+        </section>
+    </section>
+
+    <section id="about-user-container">
+        <section id="links-socials" class="aero-panel">
+
+            <section class="aero-title">
+                <button id="cambiar-links-btn" class="change-btn">
+                    <a href="/profile/edit/links" class="no-padding">
+                        Cambiar links de redes sociales
+                    </a>
+                </button>
+            </section>
+            
+
+            <div id="social-buttons-wrapper">
+
+                <div class="social-img-div">
+                    <img src="/imagens/profile/insta.jpg" alt="">
+                    <a href="https://www.instagram.com/gary_xdzinho2/" target="_blank"
+                        class="social-button">Instagram</a>
+                </div>
+
+                <div class="social-img-div">
+                    <img src="/imagens/profile/pin.jpg" alt="">
+                    <a href="https://pin.it/4RqX7csQj" target="_blank" class="social-button">Pinterest</a>
+                </div>
+
+                <div class="social-img-div">
+                    <img src="/imagens/profile/Music.png" id="music-icon" alt="">
+                    <a href="https://open.spotify.com/user/31ttbjqqyyvwq6cfdlvmi7blitlm?si=36ad4f43f6bb4dff"
+                        target="_blank" class="social-button">Spotify</a>
+                </div>
+            </div>
+
+            
+        </section>
+
+        <section id="about" class="aero-panel">
+            <section id="about-title-section" class="aero-title">
+                <section id="conteiner-cambiar-bio">
+                    <button id="cambiar-bio-btn" class="change-btn">
+                        <a href="/profile/edit/bio" class="no-padding">
+                            Cambiar Bio
+                        </a>
+                    </button>
+                </section>
+            </section>
+
+
+        </section>
+    </section>
+
+    <section id="friends-interest">
+        <section id="user-interests" class="aero-panel">
+            <section id="user-interests-title-section" class="aero-title">
+                <h2>interests</h2>
+            </section>
+
+            <section id="interests-list">
+                <p class="interest-text">Gaming</p>
+                <p class="interest-text">Drawing</p>
+                <p class="interest-text">Music</p>
+                <p class="interest-text">Programing</p>
+            </section>
+        </section>
+
+        <section id="user-friends" class="aero-panel">
+            <section id="user-friends-title-section" class="aero-title">
+                <h2>friends</h2>
+            </section>
+
+            <section id="friends-section">
+                <div class="friend-name">
+                    <p>ihaven</p>
+                    <img src="/imagens/profile/veigar.jpg" alt="friend-pfp-1">
+                </div>
+
+                <div class="friend-name">
+                    <p>someonexd</p>
+                    <img src="/imagens/profile/rah.jpg" alt="friend-pfp-2">
+                </div>
+
+                <div class="friend-name">
+                    <p>nala_456</p>
+                    <img src="/imagens/profile/dog.jpeg" alt="friend-pfp-3">
+                </div>
+
+                <div class="friend-name">
+                    <p>cats3</p>
+                    <img src="/imagens/profile/gato.jpg" alt="friend-pfp-4">
+                </div>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
