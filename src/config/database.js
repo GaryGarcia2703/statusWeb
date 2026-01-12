@@ -1,27 +1,27 @@
 import { Sequelize } from "sequelize";
-import dotenv from 'dotenv'
-dotenv.config()
+import dotenv from "dotenv";
 
-export const sequelize = new Sequelize(
-  process.env.DB_NAME,
-  process.env.DB_USER,
-  process.env.DB_PASSWORD,
-  {
-    host: process.env.DB_HOST,
-    dialect: process.env.DB_DIALECT,
-    port: Number(process.env.DB_PORT), 
-    logging: false,
+dotenv.config();
+
+export const sequelize = new Sequelize(process.env.DATABASE_URL, {
+  dialect: "postgres",
+  logging: false,
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false
+    }
   }
-);
+});
 
 export const connectDB = async () => {
   try {
     await sequelize.authenticate();
-    console.log('Database connection has been established successfully.');
+    console.log("Database connection established successfully.");
     await sequelize.sync();
-    console.log('All models were synchronized successfully.');
+    console.log("Models synchronized.");
   } catch (error) {
-    console.error('Unable to connect to the database:', error);
+    console.error("Unable to connect to the database:", error);
     process.exit(1);
   }
 };
