@@ -12,12 +12,6 @@ export class UserController {
     res.render("paginas/register");
   };
 
-  static showAbout = (req, res) => {
-    res.render("paginas/sobre", {
-      nombre: "Gary García"
-    })
-  }
-
   // Crear usuario
   static registerUser = async (req, res) => {
     const { username, password } = req.body;
@@ -149,20 +143,24 @@ export class UserController {
         title: "Cambiar nombre de perfil",
         inputType: "text",
         name: "displayname",
+        placeholder: "Informe el nombre que desea",
       },
       bio: {
         title: "Cambiar bio",
         inputType: "textarea",
         name: "bio",
+        placeholder: "Informe su nueva bio",
       },
       mood: {
         title: "Cambiar mood",
         inputType: "text",
         name: "mood",
+        placeholder: "Informe como se siente",
       },
       links: {
         title: "Cambiar links",
         isLinks: true, 
+        placeholder: "https://web.com/",
       },
     }
 
@@ -177,6 +175,7 @@ export class UserController {
         title: fieldConfig.title,
         inputType: fieldConfig.inputType,
         name: fieldConfig.name,
+        placeholder: fieldConfig.placeholder,
         isLinks: fieldConfig.isLinks ?? false,
     })
   }

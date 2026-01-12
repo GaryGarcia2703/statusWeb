@@ -1,20 +1,10 @@
-@charset "UTF-8";
-/*
- Celulares pequenos até 320px
- Celulares médios ≥ 375px
- Tablets médios ≥ 768px
- Desktops ≥ 1400px
- Telas grandes ≥ 1920px
- */
-
-@media screen and (min-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
     html, body {
         background-image: linear-gradient(#FFFFFF, #79BBED );
     }
     section {
-       max-width: 1200px;
-        width: 100%;
-        height: 750px;
+        width: 900px;
+        height: 550px;
     }
 
     div#img {

@@ -10,14 +10,13 @@
     {{#if isLinks}}
   
       <label>Instagram</label>
-      <input type="url" name="instagram">
+      <input type="url" name="instagram" placeholder="{{placeholder}}"> 
   
       <label>Pinterest</label>
-      <input type="url" name="pinterest">
+      <input type="url" name="pinterest" placeholder="{{placeholder}}">
   
       <label>Spotify</label>
-      <input type="url" name="spotify">
-  
+      <input type="url" name="spotify" placeholder="{{placeholder}}">
   
   
     {{else}}
@@ -25,12 +24,11 @@
       {{#if (eq inputType "textarea")}}
         <textarea name="{{name}}"></textarea>
       {{else}}
-        <input type="{{inputType}}" name="{{name}}">
+        <input type="{{inputType}}" name="{{name}}" placeholder="{{placeholder}}">
       {{/if}}
   
     {{/if}}
   
-    <br>
     <button type="submit">Guardar</button>
   </form>
 </main>

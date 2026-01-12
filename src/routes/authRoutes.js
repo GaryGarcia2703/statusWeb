@@ -28,7 +28,4 @@ router.get('/profile/edit/:field', UserController.GetChangeValues )
 
 router.post('/profile/edit/:field' , UserController.Updatechanges)
 
-// ruta about
-router.get('/about' , UserController.showAbout)
-
 export default router;

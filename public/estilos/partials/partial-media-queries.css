@@ -24,26 +24,26 @@
         border-radius: 2px;
     }
 
-    /* MENU */
+
     .profile-nav-list {
         width: 85%;
-        /* FUNDO MAIS ESCURO E MAIS TRANSPARENTE */
+   
         background: linear-gradient(
             180deg,
             rgba(120, 190, 190, 0.78),
             rgba(90, 160, 160, 0.78)
         );
 
-        /* VIDRO */
+        
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
 
-        /* SOMBRA MAIS FORTE (profundidade) */
+   
         box-shadow:
             0 14px 34px rgba(0, 0, 0, 0.28),
             inset 0 1px 0 rgba(255, 255, 255, 0.45);
 
-        /* CONTORNO */
+   
         border-radius: 18px;
         border: 1px solid rgba(255, 255, 255, 0.25);
     }
