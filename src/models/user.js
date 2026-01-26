@@ -25,5 +25,10 @@ export const User = sequelize.define("User", {
     type: DataTypes.JSON,
     allowNull: true
   },
+  profilePhoto: {
+    type: DataTypes.STRING,
+    allowNull: true,
+    defaultValue: "default.jpg"
+  }
 });
 

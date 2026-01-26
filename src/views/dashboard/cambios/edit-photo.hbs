@@ -1,0 +1,52 @@
+{{> profile-nav editGuardar="Guardar Cambios" editarGuardarRuta="/dashboard"}}
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/forms/edit-photo/edit-photo.css">
+    <link rel="stylesheet" href="/estilos/forms/edit-photo/edit-photo-media-query.css">
+    <link rel="shortcut icon" href="/favicon/planet-icon.png" type="image/x-icon">
+    <title>Editar foto de perfil</title>
+</head>
+
+<main>
+    <h1>Elije Una Foto de Perfil:</h1>
+    <form action="/profile/edit/photo" method="POST">
+        <section id="photos-conteiner">
+
+            <section class="photo">
+                <img src="/imagens/photos/handless.jpg" alt="" data-name="1">
+            </section>
+
+            <section class="photo">
+                <img src="/imagens/photos/dog.jpg" alt="" data-name="2">
+            </section>
+            
+            <section class="photo">
+                <img src="/imagens/photos/dorfic.jpg" alt="" data-name="3">
+            </section>
+
+            <section class="photo">
+                <img src="/imagens/photos/linux.png" alt="" data-name="4">
+            </section>
+
+            <section class="photo">
+                <img src="/imagens/photos/pfp.jpg" alt="" data-name="5">
+            </section>
+
+        <!--input para guardar el valor de la imagen seleccionada-->
+        <input type="hidden" name="photoSelected" id="photoSelected">
+
+        </section>
+        <div id="button">
+            <button type="submit" id="guardar-btn" class="btn-aero" disabled>
+                Guardar
+            </button>
+        </div>
+    </form>
+</main>
+
+
+<script src="/js/photo-selecter.js"></script>

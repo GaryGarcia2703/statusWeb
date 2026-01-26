@@ -1,5 +1,5 @@
 section#main-user-container {
-    min-height: 50vh;
+    min-height: 35vh;
     height: auto;
 }
 
@@ -61,6 +61,10 @@ section#conteiner-cambiar-bio {
 }
 
 /*alteraciones especificas*/
+
+section#user-profile {
+    height: 40vh;
+}
 
 section#conteiner-foto-mood {
     display: flex;

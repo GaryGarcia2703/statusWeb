@@ -24,7 +24,10 @@ router.get('/dashboard', UserController.showDashboard);
 router.get('/profile/edit' , UserController.showFormProfile)
 
 // rutas para actualizar cambios de perfil
-router.get('/profile/edit/:field', UserController.GetChangeValues )
+router.get('/profile/edit/photo' , UserController.ShowChangePhoto)
+router.post('/profile/edit/photo' , UserController.GetChangePhoto)
+
+router.get('/profile/edit/:field', UserController.GetChangeValues)
 
 router.post('/profile/edit/:field' , UserController.Updatechanges)
 

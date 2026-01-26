@@ -6,7 +6,11 @@
 
     .profile-nav {
         position: relative;
-        width: 87%;
+        width: 92%;
+    }
+
+    .profile-nav-item {
+        margin: 10px;
     }
 
     /* BOTÃO HAMBURGUER */
@@ -26,7 +30,7 @@
 
 
     .profile-nav-list {
-        width: 85%;
+        width: 100%;
    
         background: linear-gradient(
             180deg,
@@ -52,11 +56,38 @@
     #menu-toggle:checked ~ .profile-nav-list {
         max-height: 350px;
     }
+
+    ul {
+        padding: 0px;
+    }
 }
 
-/* DESKTOP MÉDIO (quando começa a apertar) */
-@media (max-width: 1068px) {
+/* TABLET */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .profile-nav{
+        width: 95%;
+    }
 
+    .profile-nav-item {
+        min-width: 10px;
+        height: 44px;
+        font-size: 0.9em;
+    }
+}
+
+/* 💻 Laptop (1024 – 1365) */
+@media (min-width: 1024px) and (max-width: 1365px) {
+    .profile-nav{
+        width: 95%;
+    }
+}
+
+/* 🖥️ PC medio (1366 – 1439) */
+@media (min-width: 1366px) and (max-width: 1439px) {
+    .profile-nav{
+        width: 95%;
+    }
+    
     .profile-nav-item {
         min-width: 140px;
         height: 46px;
@@ -72,21 +103,7 @@
     }
 }
 
-/* LAPTOP */
-@media (max-width: 1279px) and (min-width: 1024px) {
-    .profile-nav{
-        width: 95%;
-    }
-}
-/* TABLET */
-@media (max-width: 1023px) and (min-width: 768px) {
-    .profile-nav{
-        width: 95%;
-    }
-
-   .profile-nav-item {
-        min-width: 10px;
-        height: 44px;
-        font-size: 0.9em;
-    }
+/* 🖥️ PC grande (1440+) */
+@media (min-width: 1440px) {
+  /* estilos pc grande */
 }

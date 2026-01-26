@@ -1,0 +1,39 @@
+/*MOBILE*/
+@media (max-width: 767px) {
+    main#main-form {
+        min-height: 100vh;          /* mejor que height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    /* CENTRA vertical */
+        align-items: center;        /* CENTRA horizontal */
+        padding: 20px;
+    }
+
+    form {
+        height: 195px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    input{
+        height: 45px;
+    }
+}
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+/*LAPTOP*/
+@media (min-width: 1024px) and (max-width: 1365px) {
+}
+
+/*PC MEDIO*/
+@media (min-width: 1366px) and (max-width: 1439px) {
+}
+
+/*PC GRANDE*/
+@media (min-width: 1440px) {
+}

@@ -1,8 +1,14 @@
+{{> profile-nav editGuardar="Guardar Cambios" editarGuardarRuta="/dashboard"}}
+
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/estilos/forms/forms.css">
+  <link rel="stylesheet" href="/estilos/forms/forms-media-queries.css">
+  <link rel="shortcut icon" href="/favicon/planet-icon.png" type="image/x-icon">
+  <title>{{title}}</title>
 </head>
 
-<main>
+<main id="main-form">
   <h2>{{title}}</h2>
   
   <form method="POST">

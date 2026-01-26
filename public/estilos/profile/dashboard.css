@@ -173,7 +173,6 @@ section#user-background{
 /* Contenedor Flexbox que alinea la sección de Socials y la sección About */
 section#about-user-container{
     width: 95vw;
-    height: 75vh;
     
     /* Activa Flexbox para alinear los hijos horizontalmente */
     display: flex;

@@ -1,0 +1,45 @@
+@media (max-width: 1200px) {
+    section#photos-conteiner {
+        flex-wrap: wrap;
+        max-width: 900px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    section#photos-conteiner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 0 20px;
+    }
+
+    section.photo img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    section.photos-conteiner {
+        grid-template-columns: 1fr;
+    }
+
+    section.photo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    section.photo img:hover {
+        transform: scale(1.05);
+    }
+}
+

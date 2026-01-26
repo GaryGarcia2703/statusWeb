@@ -3,7 +3,7 @@
 ========================= */
 
 .profile-nav {
-    width: 100%;
+    width: 95%;
     max-width: 1855px;
     margin-bottom: 25px;
 
@@ -33,6 +33,7 @@
 ========================= */
 
 .profile-nav h1 {
+    font-family: 'HBB Hegarty', sans-serif;
     margin: 0;
     font-size: 2.2em;
     font-weight: 800;
