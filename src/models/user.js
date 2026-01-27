@@ -10,6 +10,7 @@ export const User = sequelize.define("User", {
   displayname: {
     type: DataTypes.STRING,
     allowNull: false,
+    defaultValue: "",
   },
   password: {
     type: DataTypes.STRING,
@@ -22,7 +23,7 @@ export const User = sequelize.define("User", {
     type: DataTypes.STRING,
   },
   links: {
-    type: DataTypes.JSON,
+    type: DataTypes.JSONB,
     allowNull: true
   },
   profilePhoto: {
