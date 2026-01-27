@@ -96,6 +96,7 @@ export class UserController {
       mood: user.mood,
       bio: user.bio,
       links: user.links,
+      profilePhoto: user.profilePhoto || "default.jpg"
     };
 
     res.redirect("/dashboard");
