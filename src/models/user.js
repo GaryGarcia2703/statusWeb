@@ -29,7 +29,7 @@ export const User = sequelize.define("User", {
   profilePhoto: {
     type: DataTypes.STRING,
     allowNull: true,
-    defaultValue: "default.jpg"
+    defaultValue: "King.jpg"
   }
 });
 
