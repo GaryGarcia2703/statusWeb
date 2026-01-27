@@ -229,7 +229,7 @@ export class UserController {
     const { photoSelected } = req.body
 
     const imagenes = { 
-      1: "handless.jpg",
+      1: "sonic.jpg",
       2: "dog.jpg",
       3: "dorfic.jpg",
       4: "linux.png",
