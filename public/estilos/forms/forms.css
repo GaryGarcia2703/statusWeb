@@ -52,6 +52,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 input {
@@ -67,6 +68,7 @@ textarea {
     /* 1. Control de Tamaño */
     width: 90%;           /* Ocupa todo el ancho de su contenedor */
     min-height: 150px;     /* Evita que se vea "chatito" */
+    margin: 30px;
     resize: vertical;      /* Permite al usuario agrandarlo hacia abajo, pero no hacia los lados */
     
     /* 2. Estética Web 2.0 (Acorde a tu sitio) */
@@ -83,6 +85,17 @@ textarea {
     
     /* 4. Sombra suave para profundidad */
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+
+    padding: 35px;      /* Reducimos un poco el padding para ganar espacio */
+        min-height: 150px;  /* Altura un poco más baja para que no tape toda la pantalla */
+        font-size: 14px;    /* Ajustamos el tamaño de fuente para móviles */
+        line-height: 1.4;   /* Un interlineado ligeramente más compacto */
+        
+        /* Opcional: Si el contenedor padre tiene márgenes, 
+           podemos asegurar que el textarea no se pegue al borde físico del móvil */
+        width: 95%;         
+        margin: 0 auto;
+        display: block;
 
 
 }

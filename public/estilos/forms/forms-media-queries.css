@@ -10,7 +10,7 @@
     }
 
     form {
-        height: 195px;
+        height: 395px;
     }
 
     h2 {
@@ -19,6 +19,19 @@
 
     input{
         height: 45px;
+    }
+
+    textarea {
+        padding: 35px;      /* Reducimos un poco el padding para ganar espacio */
+        min-height: 150px;  /* Altura un poco más baja para que no tape toda la pantalla */
+        font-size: 14px;    /* Ajustamos el tamaño de fuente para móviles */
+        line-height: 1.4;   /* Un interlineado ligeramente más compacto */
+        
+        /* Opcional: Si el contenedor padre tiene márgenes, 
+           podemos asegurar que el textarea no se pegue al borde físico del móvil */
+        width: 95%;         
+        margin: 0 auto;
+        display: block;
     }
 }
 
