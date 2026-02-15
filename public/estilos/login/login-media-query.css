@@ -1,84 +1,47 @@
 @charset "UTF-8";
 
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* =====================
-   RESET + BASE (MOBILE FIRST)
-   ===================== */
-* {
-    font-family: 'Funnel Sans', Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100vh;
-    background-color: #79BBED;
-    background-attachment: fixed;
-}
-
-/* =====================
-   TABLET (>=768px)
-   ===================== */
+/* TABLET */
 @media (min-width: 768px) {
     section {
         max-width: 750px;
         height: 500px;
     }
 
-    input#entrar {
-        width: 349px;
-    
-    }
-
-    #crearCuenta { 
-        width: 350px; 
-    }
-
     div#img {
         float: left;
         width: 35%;
         height: 100%;
-        background-image: url(/imagens/Frutiger_Aero_place.jpg);
+        background-image: url("/imagens/Frutiger_Aero_place.jpg");
     }
 
-    form { float: right; width: 65%; }
-
-    h1 { font-size: 3em; }
-    p { font-size: 1.2em; }
+    form {
+        float: right;
+        width: 65%;
+    }
 
     input#username,
-    input#senha { width: 330px; }
+    input#senha {
+        width: 330px;
+    }
 }
 
-/* =====================
-   LAPTOP / DESKTOP NORMAL (>=1024px)
-   ===================== */
+/* LAPTOP */
 @media (min-width: 1024px) {
-
-    div#img {
-        background-image: url(/imagens/sonic.jpg);
-    }
     section {
         max-width: 1000px;
         height: 600px;
     }
 
-    div#img { width: 45%; }
+    div#img {
+        width: 45%;
+        background-image: url("/imagens/sonic.jpg");
+    }
+
     form { width: 55%; }
 }
 
-/* =====================
-   DESKTOP GRANDE (>=1440px)
-   ===================== */
+/* DESKTOP GRANDE */
 @media (min-width: 1440px) {
-    html, body {
-        background-image: linear-gradient(#FFFFFF, #79BBED);
-    }
-
     section {
         max-width: 1200px;
         height: 750px;
@@ -86,16 +49,12 @@ html, body {
 
     div#img {
         width: 50%;
-        background-image: url(/imagens/sonic.jpg);
     }
 
     form { width: 50%; }
 
-    input#username,input#senha { 
-        width: 360px; 
-    }
-
-    input#entrar,#crearCuenta { 
-        width: 350px; 
+    input#username,
+    input#senha {
+        width: 360px;
     }
 }
