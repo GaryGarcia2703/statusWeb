@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/estilos/profile/dashboard.css">
-    <link rel="stylesheet" href="/estilos/profile/dashboard-media-queries.css">
     <link rel="stylesheet" href="/estilos/profile/edit-profile/edit-profile.css">
     <link rel="stylesheet" href="/estilos/profile/edit-profile/edit-profile-media-query.css">
+    <link rel="stylesheet" href="/estilos/profile/dashboard-media-queries.css">
     <link rel="shortcut icon" href="/favicon/planet-icon.png" type="image/x-icon">
 
     <!--estilos especificos para el form edit-->
@@ -19,7 +19,7 @@
 <!--REALIZAR CAAMBIOS DE ID PARA BOTONES DE CAMBIOS PORQUE EL <A> EST MUY PEQUEÑO HCER ESTE CAAMBIOS-->
     <section id="main-user-container">
 
-        <section id="user-profile" class="aero-panel">
+        <section id="user-profile" class="aero-panel aero-panel-mobile">
             <section id="username-section" class="aero-title">
                 <section>
               
@@ -37,7 +37,6 @@
                     src="/imagens/photos/{{profilePhoto}}" 
                     alt="Foto de perfil"
                     class="profile-photo"
-                    onerror="this.src='/imagens/photos/default.jpg'"
                 />
             </section>
 
@@ -90,7 +89,7 @@
                 </div>
 
                 <div class="social-img-div">
-                    <img src="/imagens/profile/Music.png" id="music-icon" alt="">
+                    <img src="/imagens/profile/sptfy_logo.png" id="music-icon" alt="">
                     <a href=""
                     class="social-button">Spotify</a>
                 </div>

@@ -75,6 +75,7 @@ h2 {
     border-radius: 10px 10px 0px 0px;
     /* Sombra interna para efecto de barra de título */
     box-shadow: inset 0px -1px 20px 3px rgb(0 0 0 / 35%);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 /*
@@ -162,6 +163,7 @@ section#user-background{
     background-image: url(/imagens/profile/sonic.jpg);
     background-size: cover;
     background-position: center center;
+    box-shadow: 1px 5px 13px 7px rgb(0 0 0 / 35%);
 }
 
 /*
@@ -185,7 +187,39 @@ section#about-user-container{
 /* ESTILO PARA CONSERVAR LOS ESPACIOS DESEADOS DEL PARAGRAFO*/
 
 p#bio {
-  white-space: pre-wrap;
+    /* 1. Espaciado y alineación */
+    padding: 25px 35px; 
+    line-height: 1.6;   
+    white-space: pre-wrap;
+    
+    
+    color: #1a3a4a; 
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuentes limpias */
+    font-size: 1.05rem;
+    
+    /* 4. Efecto de texto (Sutil) */
+    /* Un ligero brillo blanco debajo ayuda a la sensación de relieve */
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); 
+    
+    /* 5. Ajustes de caja */
+    text-align: justify; /* Opcional: hace que el bloque se vea más ordenado */
+
+    /* Evita que palabras largas o links rompan el layout */
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+    word-break: break-word;
+
+    /* Respeta los 'Enters' que el usuario hizo en el textarea */
+    white-space: pre-line;
+}
+
+/* Estilo para los títulos dentro del Bio (si usas <strong> o <span>) */
+p#bio strong {
+    color: #0056b3; /* Un azul más vibrante para resaltar preguntas */
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
 }
 
 /* Estilos del panel de enlaces sociales (#links-socials) */
@@ -218,6 +252,8 @@ div.social-img-div img {
 h2#title-social-links {
     padding: 15px;
     margin-top: 0px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+
 }
 
 /*links redes sociales*/
@@ -275,7 +311,7 @@ h2#title-social-links {
 
 /* Estilos para la sección de información "Acerca de mí" */
 section#about {
-    width: 50vw;
+    width: 45vw;
     margin-right: 4vw;
 }
 

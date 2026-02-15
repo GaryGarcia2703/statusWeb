@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    height: 100vh;
     background-color: azure;
     background-image: url(/imagens/profile/2w.png);
     background-repeat: no-repeat;
@@ -11,8 +16,12 @@ body {
     background-size: cover;
 }
 
+nav {
+    margin: 10px;
+}
+
 form {
-    max-width: 680px;
+    max-width: 780px;
     width: 100%;
     background-color: rgba(190, 225, 255, 0.25);
 
@@ -54,6 +63,35 @@ input {
     box-shadow: 5px 9px 6px 1px #0000006b;
 }
 
+textarea {
+    /* 1. Control de Tamaño */
+    width: 90%;           /* Ocupa todo el ancho de su contenedor */
+    min-height: 150px;     /* Evita que se vea "chatito" */
+    resize: vertical;      /* Permite al usuario agrandarlo hacia abajo, pero no hacia los lados */
+    
+    /* 2. Estética Web 2.0 (Acorde a tu sitio) */
+    background: rgba(255, 255, 255, 0.3); /* Fondo semi-transparente */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(5px); /* Efecto de vidrio esmerilado */
+    
+    /* 3. Texto y Espaciado */
+
+    font-family: inherit;  /* Usa la misma fuente que el resto del sitio */
+    color: #1a3a4a;        /* Azul oscuro para legibilidad */
+    outline: none;         /* Quita el borde azul feo que pone Chrome al hacer clic */
+    
+    /* 4. Sombra suave para profundidad */
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+
+
+}
+
+/* Efecto cuando el usuario hace clic para escribir */
+textarea#bio-edit:focus {
+    border: 1px solid #82d8ff;
+    box-shadow: 0 0 8px rgba(130, 216, 255, 0.6);
+}
 button {
     margin: 10px;
     /* Dimensiones: Un poco más ancho pero manteniendo el estilo pequeño */

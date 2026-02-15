@@ -24,9 +24,14 @@ main, section#img, a#entrar, a#crear {
 
 div#conteiner {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  width: 97vw;
 }
+
 
 main {
   margin-top: 20px;
