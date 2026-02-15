@@ -86,7 +86,7 @@ html, body {
 
     div#img {
         width: 50%;
-        background-image: url(../../imagens/sonic.jpg);
+        background-image: url(/imagens/sonic.jpg);
     }
 
     form { width: 50%; }
