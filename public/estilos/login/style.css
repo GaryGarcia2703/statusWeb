@@ -45,7 +45,7 @@ section {
 div#img {
     display: block;
     background-color: #9ddbf8;
-    background: url(../../imagens/silverp.png);
+    background: url(/imagens/silverp.png);
     background-position: center center;
     background-size: cover;
     height: 200px;
