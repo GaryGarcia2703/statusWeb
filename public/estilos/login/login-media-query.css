@@ -42,7 +42,7 @@ html, body {
         float: left;
         width: 35%;
         height: 100%;
-        background-image: url(../../imagens/Frutiger_Aero_place.jpg);
+        background-image: url(/imagens/Frutiger_Aero_place.jpg);
     }
 
     form { float: right; width: 65%; }
@@ -60,7 +60,7 @@ html, body {
 @media (min-width: 1024px) {
 
     div#img {
-        background-image: url(../../imagens/sonic.jpg);
+        background-image: url(/imagens/sonic.jpg);
     }
     section {
         max-width: 1000px;
