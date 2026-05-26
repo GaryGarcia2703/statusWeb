@@ -5,12 +5,13 @@
 @media (max-width: 767px) {
 
     .profile-nav {
-        position: relative;
-        width: 92%;
+        width: 100%;
+        padding: 10 12px; /* controla espaço lateral */
+        box-sizing: border-box;
     }
 
     .profile-nav-item {
-        margin: 10px;
+        margin: 10px 0; /* só vertical */
     }
 
     /* BOTÃO HAMBURGUER */
@@ -29,7 +30,29 @@
     }
 
 
+    /*FLEX BOX DE LA LISTA*/
     .profile-nav-list {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        
+
+        background: #ffffff;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+
+        max-height: 0;
+        overflow: hidden;
+
+        transition: max-height 0.4s ease;
+    }
+
+    /*ESTILOS DE LA LISTA (COLORES)*/
+    .profile-nav-list {
+
         width: 100%;
    
         background: linear-gradient(
@@ -49,7 +72,7 @@
 
    
         border-radius: 18px;
-        border: 1px solid rgba(255, 255, 255, 0.25);
+
     }
 
     /* MENU ABERTO (estilo Guanabara) */
@@ -60,6 +83,28 @@
     ul {
         padding: 0px;
     }
+
+    .profile-nav {
+        position: relative;
+    }
+
+    /* BOTÃO HAMBURGUER */
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+    }
+
+    .menu-icon span {
+        width: 28px;
+        height: 3px;
+        background: #000;
+        border-radius: 2px;
+    }
+
+    
+    
 }
 
 /* TABLET */
@@ -75,14 +120,14 @@
     }
 }
 
-/* 💻 Laptop (1024 – 1365) */
+/* Laptop (1024 – 1365) */
 @media (min-width: 1024px) and (max-width: 1365px) {
     .profile-nav{
         width: 95%;
     }
 }
 
-/* 🖥️ PC medio (1366 – 1439) */
+/* PC medio (1366 – 1439) */
 @media (min-width: 1366px) and (max-width: 1439px) {
     .profile-nav{
         width: 95%;
@@ -103,7 +148,7 @@
     }
 }
 
-/* 🖥️ PC grande (1440+) */
+/* PC grande (1440+) */
 @media (min-width: 1440px) {
   /* estilos pc grande */
 }

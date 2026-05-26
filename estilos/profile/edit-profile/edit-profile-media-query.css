@@ -1,0 +1,80 @@
+/* DESKTOP (padrão) */
+
+/* LAPTOP */
+@media (max-width: 1279px) and (min-width: 1024px) {
+
+   .aero-panel-mobile {
+      min-height: 50vh !important;
+      overflow: hidden; /* Esto evita que el contenido se salga si es muy grande */
+   }
+   #conteiner-foto-mood {
+      display: flex;
+   }
+
+   a#cambiar-foto-btn {
+      width: 100% !important; /* Prueba con esto solo para ver si reacciona */
+      max-width: none !important; /* IMPORTANTE: Quita el límite de los 190px */
+      margin-bottom: 10px;
+   }
+
+   .change-btn {
+      width: 100px;
+   }
+}
+
+/* TABLET */
+@media (max-width: 1023px) and (min-width: 768px) {
+
+   .aero-panel-mobile {
+      min-height: 50vh !important;
+      overflow: hidden; /* Esto evita que el contenido se salga si es muy grande */
+   }
+   #conteiner-foto-mood {
+      display: flex;
+   }
+
+   a#cambiar-foto-btn {
+      width: 100% !important; /* Prueba con esto solo para ver si reacciona */
+      max-width: none !important; /* IMPORTANTE: Quita el límite de los 190px */
+      margin-bottom: 10px;
+   }
+
+   .change-btn {
+    width: 70px;
+ }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+
+   .aero-panel-mobile {
+      min-height: 50vh !important;
+      overflow: hidden; /* Esto evita que el contenido se salga si es muy grande */
+   }
+   #conteiner-foto-mood {
+      display: flex;
+   }
+
+   a#cambiar-foto-btn {
+      width: 100% !important; /* Prueba con esto solo para ver si reacciona */
+      max-width: none !important; /* IMPORTANTE: Quita el límite de los 190px */
+      margin-bottom: 10px;
+   }
+
+   a#cambiar-mood-btn {
+     width: 100% !important; /* Prueba con esto solo para ver si reacciona */
+        max-width: none !important; /* IMPORTANTE: Quita el límite de los 190px */
+        margin-bottom: 10px;
+   }
+
+   section#main-user-container {
+      min-height: 95vh;
+      height: auto;
+   }
+
+   .change-btn {
+      width: 100%;
+      max-width: none;
+      font-size: 0.95rem;
+   }
+}

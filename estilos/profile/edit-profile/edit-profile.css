@@ -72,16 +72,14 @@ section#conteiner-foto-mood {
 }
 
 a#cambiar-foto-btn {
-    width: 190px;
+    max-width:190px;
+    width: 100%;
     margin-bottom: 0px;
 }
 
 a#cambiar-mood-btn {
-    width: 190px;
+    max-width:190px;
+    width: 100%;
     margin-bottom: 0px;
 }
 
-a#cambiar-bio-btn {
-    max-width: 760px;
-    width: 100%;
-}
