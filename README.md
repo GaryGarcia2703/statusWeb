@@ -72,6 +72,16 @@ npm install
 npm start
 ```
 
+
+```md
+## Live Demo
+
+<a href="https://statusweb.onrender.com" target="_blank">
+  <img src="https://img.shields.io/badge/Visit%20statusWeb-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white"/>
+</a>
+```
+
+
 ## Future improvements
 
 * Dark mode
