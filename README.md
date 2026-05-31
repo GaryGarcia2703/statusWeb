@@ -56,6 +56,31 @@ The project was created to improve my backend and frontend development skills wh
 
 ## Screenshots
 
+## 📸 Screenshots
+
+### Home
+
+![Home](./screenshots/home.png)
+
+### Dashboard
+
+![Dashboard](./screenshots/dashboard.png)
+
+### Services
+
+![Services](./screenshots/services.png)
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="./screenshots/home.png" width="45%">
+  <img src="./screenshots/dashboard.png" width="45%">
+</p>
+
+<p align="center">
+  <img src="./screenshots/services.png" width="45%">
+</p>
+
 Add screenshots of:
 
 * Login page
@@ -77,16 +102,6 @@ npm start
 <a href="https://statusweb.onrender.com" target="_blank">
   <img src="https://img.shields.io/badge/Visit%20StatusWeb-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white" />
 </a>
-
-
-## 🌐 Live Demo
-
-[![Visit StatusWeb](https://img.shields.io/badge/Visit%20StatusWeb-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white)](https://statusweb.onrender.com)
-
-
-## 🌐 Live Demo
-
-[![Website](https://img.shields.io/badge/🚀%20Open%20StatusWeb-22c55e?style=for-the-badge)](https://statusweb.onrender.com)
 
 
 ## Future improvements
