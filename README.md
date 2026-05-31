@@ -72,10 +72,21 @@ npm install
 npm start
 ```
 
+## 🌐 Live Demo
+
+<a href="https://statusweb.onrender.com" target="_blank">
+  <img src="https://img.shields.io/badge/Visit%20StatusWeb-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white" />
+</a>
+
 
 ## 🌐 Live Demo
 
 [![Visit StatusWeb](https://img.shields.io/badge/Visit%20StatusWeb-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white)](https://statusweb.onrender.com)
+
+
+## 🌐 Live Demo
+
+[![Website](https://img.shields.io/badge/🚀%20Open%20StatusWeb-22c55e?style=for-the-badge)](https://statusweb.onrender.com)
 
 
 ## Future improvements
