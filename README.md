@@ -60,11 +60,11 @@ The project was created to improve my backend and frontend development skills wh
 
 ### Home
 
-![Home](./screenshots/Captura%20de%20tela%202026-05-30%20225148.png)
+![Home](./screenshots/dashboard.png)
 
 ### Dashboard
 
-![Dashboard](./screenshots/Captura%20de%20tela%202026-05-30%20225158.png)
+![Dashboard](./screenshots/photoprofile.png)
 
 ### Services
 
