@@ -60,25 +60,25 @@ The project was created to improve my backend and frontend development skills wh
 
 ### Home
 
-![Home](./screenshots/home.png)
+![Home](./screenshots/Captura%20de%20tela%202026-05-30%20225148.png)
 
 ### Dashboard
 
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](./screenshots/Captura%20de%20tela%202026-05-30%20225158.png)
 
 ### Services
 
-![Services](./screenshots/services.png)
+![Services](./screenshots/Captura%20de%20tela%202026-05-30%20225512.png)
 
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="./screenshots/home.png" width="45%">
-  <img src="./screenshots/dashboard.png" width="45%">
+  <img src="./screenshots/Captura de tela 2026-05-30 225158.png" width="45%">
+  <img src="./screenshots/Captura de tela 2026-05-30 225512.png" width="45%">
 </p>
 
 <p align="center">
-  <img src="./screenshots/services.png" width="45%">
+  <img src="./screenshots/Captura de tela 2026-05-30 225526.png" width="45%">
 </p>
 
 Add screenshots of:
