@@ -66,6 +66,12 @@ The project was created to improve my backend and frontend development skills wh
   <img src="./Screenshots/photoprofile.png" width="45%">
 </p>
 
+<p align="center">
+  <img src="/Screenshots/mobile.png" width="45%">
+  <img src="./Screenshots/mobile2.png" width="45%">
+  <img src="/Screenshots/mobile3.png" width="45%">
+</p>
+
 ## Running locally
 
 ```bash
