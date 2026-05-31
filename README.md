@@ -56,37 +56,15 @@ The project was created to improve my backend and frontend development skills wh
 
 ## Screenshots
 
-## 📸 Screenshots
-
-### Home
-
-![Home](./screenshots/dashboard.png)
-
-### Dashboard
-
-![Dashboard](./screenshots/photoprofile.png)
-
-### Services
-
-![Services](./screenshots/Captura%20de%20tela%202026-05-30%20225512.png)
-
-## 📸 Screenshots
-
 <p align="center">
   <img src="/Screenshots/createAccount.png" width="45%">
-  <img src="./Screenshots/photoprofile.png" width="45%">
+  <img src="./Screenshots/login.png" width="45%">
 </p>
 
 <p align="center">
-  <img src="./screenshots/Captura de tela 2026-05-30 225526.png" width="45%">
+  <img src="/Screenshots/dashboard.png" width="45%">
+  <img src="./Screenshots/photoprofile.png" width="45%">
 </p>
-
-Add screenshots of:
-
-* Login page
-* User dashboard
-* Profile page
-* Mobile version
 
 ## Running locally
 
