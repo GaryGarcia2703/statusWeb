@@ -73,13 +73,9 @@ npm start
 ```
 
 
-```md
-## Live Demo
+## 🌐 Live Demo
 
-<a href="https://statusweb.onrender.com" target="_blank">
-  <img src="https://img.shields.io/badge/Visit%20statusWeb-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white"/>
-</a>
-```
+[![Visit StatusWeb](https://img.shields.io/badge/Visit%20StatusWeb-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white)](https://statusweb.onrender.com)
 
 
 ## Future improvements
