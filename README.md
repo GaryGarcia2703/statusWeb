@@ -67,7 +67,7 @@ The project was created to improve my backend and frontend development skills wh
 </p>
 
 <p align="center">
-  <img src="/Screenshots/mobile.png" width="25%" height="300">
+  <img src="/Screenshots/mobile.png" width="25%" height="435">
   <img src="./Screenshots/mobile2.png" width="25%" height="300">
   <img src="/Screenshots/mobile3.png" width="25%" >
 </p>
