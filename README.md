@@ -73,8 +73,8 @@ The project was created to improve my backend and frontend development skills wh
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="./screenshots/Captura de tela 2026-05-30 225158.png" width="45%">
-  <img src="./screenshots/Captura de tela 2026-05-30 225512.png" width="45%">
+  <img src="/Screenshots/createAccount.png" width="45%">
+  <img src="./Screenshots/photoprofile.png" width="45%">
 </p>
 
 <p align="center">
