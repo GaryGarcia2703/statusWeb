@@ -4,6 +4,10 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+if (!process.env.DATABASE_URL) {
+  throw new error ("DATABASES_URL nao foi definida no .env")
+}
+
 const requiredVars = [
   "DB_NAME",
   "DB_USER",
@@ -18,9 +22,7 @@ for (const key of requiredVars) {
 }
 
 export const sequelize = new Sequelize(
-  process.env.DB_NAME,
-  process.env.DB_USER,
-  process.env.DB_PASSWORD,
+  process.env.DATABASE_URL,
   {
     host: process.env.DB_HOST,
     port: Number(process.env.DB_PORT || 5432),
