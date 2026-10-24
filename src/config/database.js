@@ -35,6 +35,14 @@ export const sequelize = new Sequelize(
   }
 );
 
+console.log("DB diagnostic:", {
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  database: process.env.DB_NAME,
+  passwordDefined: Boolean(process.env.DB_PASSWORD),
+  passwordLength: process.env.DB_PASSWORD?.length,
+});
+
 export const connectDB = async () => {
   try {
     await sequelize.authenticate();
