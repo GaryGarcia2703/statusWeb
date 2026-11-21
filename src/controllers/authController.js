@@ -223,13 +223,13 @@ export class UserController {
     res.render("dashboard/cambios/edit-photo");
   };
 
-  static GetChangePhoto = async (req,res) => {
+  static GetChangePhoto = async (req, res) => {
     if (!req.session.user) {
       return res.redirect("/auth/login");
     }
     const { photoSelected } = req.body
 
-    const imagenes = { 
+    const imagenes = {
       1: "sonic.jpg",
       2: "dog.jpg",
       3: "dorfic.jpg",
@@ -244,13 +244,25 @@ export class UserController {
     }
 
     await User.update(
-      { profilePhoto: selectedPhoto},
+      { profilePhoto: selectedPhoto },
       { where: { id: req.session.user.id } }
     )
-  
+
     req.session.user.profilePhoto = selectedPhoto;
 
     console.log(selectedPhoto)
     res.redirect("/dashboard")
   }
+
+  // logout
+  static logout = (req, res) => {
+    req.session.destroy((err) => {
+      if (err) {
+        console.error("Error al cerrar sesión:", err);
+        return res.redirect("/dashboard");
+      }
+      res.clearCookie("connect.sid");
+      res.redirect("/login");
+    });
+  };
 }
