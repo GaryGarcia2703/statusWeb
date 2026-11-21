@@ -162,12 +162,25 @@ export class UserController {
         isLinks: true,
         placeholder: "https://web.com/",
       },
+      interests: {                                          // NUEVO
+        title: "Agregar intereses",
+        inputType: "text",
+        name: "interest",
+        placeholder: "Ej: Música, Fotografía, Gaming",
+        isInterests: true,
+      },
     };
 
     const fieldConfig = config[field];
 
     if (!fieldConfig) {
       return res.redirect("/");
+    }
+
+    let interests = [];                                     // NUEVO
+    if (fieldConfig.isInterests) {
+      const user = await User.findByPk(req.session.user.id);
+      interests = user?.interests ?? [];
     }
 
     res.render("dashboard/cambios/edit-field", {
@@ -177,6 +190,8 @@ export class UserController {
       name: fieldConfig.name,
       placeholder: fieldConfig.placeholder,
       isLinks: fieldConfig.isLinks ?? false,
+      isInterests: fieldConfig.isInterests ?? false,        // NUEVO
+      interests,
     });
   };
 
@@ -199,6 +214,21 @@ export class UserController {
     }
 
     let newValue;
+    if (field === "interests") {
+      const interest = (req.body.interest || "").trim().slice(0, 30);
+      const back = "/profile/edit/interests";
+
+      if (!interest) return res.redirect(back);
+
+      const user = await User.findByPk(userId);
+      const current = Array.isArray(user.interests) ? user.interests : [];
+
+      const repeated = current.some((i) => i.toLowerCase() === interest.toLowerCase());
+      if (repeated || current.length >= 10) return res.redirect(back);
+
+      await User.update({ interests: [...current, interest] }, { where: { id: userId } });
+      return res.redirect(back);
+    }
 
     if (field === "links") {
       newValue = {
@@ -265,4 +295,6 @@ export class UserController {
       res.redirect("/login");
     });
   };
+
+
 }

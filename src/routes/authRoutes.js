@@ -34,4 +34,5 @@ router.post('/profile/edit/:field' , UserController.Updatechanges)
 //ruta para logout
 router.get('/logout', UserController.logout);
 
+
 export default router;

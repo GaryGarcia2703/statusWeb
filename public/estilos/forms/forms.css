@@ -161,3 +161,21 @@ button:active {
     transform: translateY(1px); 
     border: 1px solid #1B4D10; 
 }
+
+#interests-added {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 90%;
+    margin: 10px 0;
+}
+
+.interest-chip {
+    color: #1a3a4a;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 3px solid #17608788;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 4px 6px 9px 1px rgba(0, 0, 0, 0.35);
+}

@@ -26,6 +26,11 @@ export const User = sequelize.define("User", {
     type: DataTypes.JSONB,
     allowNull: true
   },
+  interests: {
+    type: DataTypes.JSONB,
+    allowNull: true,
+    defaultValue: []
+  },
   profilePhoto: {
     type: DataTypes.STRING,
     allowNull: true,

@@ -1,52 +1,55 @@
 /*MOBILE*/
 @media (max-width: 767px) {
     main#main-form {
-        min-height: 100vh;          /* mejor que height */
+        min-height: 100vh;
+        /* mejor que height */
         display: flex;
         flex-direction: column;
-        justify-content: center;    /* CENTRA vertical */
-        align-items: center;        /* CENTRA horizontal */
+        justify-content: center;
+        /* CENTRA vertical */
+        align-items: center;
+        /* CENTRA horizontal */
         padding: 20px;
     }
 
     form {
-        height: 395px;
+        min-height: 395px;
     }
 
     h2 {
         font-size: 50px;
     }
 
-    input{
+    input {
         height: 45px;
     }
 
     textarea {
-        padding: 35px;      /* Reducimos un poco el padding para ganar espacio */
-        min-height: 150px;  /* Altura un poco más baja para que no tape toda la pantalla */
-        font-size: 14px;    /* Ajustamos el tamaño de fuente para móviles */
-        line-height: 1.4;   /* Un interlineado ligeramente más compacto */
-        
+        padding: 35px;
+        /* Reducimos un poco el padding para ganar espacio */
+        min-height: 150px;
+        /* Altura un poco más baja para que no tape toda la pantalla */
+        font-size: 14px;
+        /* Ajustamos el tamaño de fuente para móviles */
+        line-height: 1.4;
+        /* Un interlineado ligeramente más compacto */
+
         /* Opcional: Si el contenedor padre tiene márgenes, 
            podemos asegurar que el textarea no se pegue al borde físico del móvil */
-        width: 95%;         
+        width: 95%;
         margin: 0 auto;
         display: block;
     }
 }
 
 /*TABLET*/
-@media (min-width: 768px) and (max-width: 1023px) {
-}
+@media (min-width: 768px) and (max-width: 1023px) {}
 
 /*LAPTOP*/
-@media (min-width: 1024px) and (max-width: 1365px) {
-}
+@media (min-width: 1024px) and (max-width: 1365px) {}
 
 /*PC MEDIO*/
-@media (min-width: 1366px) and (max-width: 1439px) {
-}
+@media (min-width: 1366px) and (max-width: 1439px) {}
 
 /*PC GRANDE*/
-@media (min-width: 1440px) {
-}
+@media (min-width: 1440px) {}

@@ -10,21 +10,18 @@
     <link rel="stylesheet" href="../../../public/favicon/planet-icon.png">
     <title>Profile/dashboard</title>
 </head>
+
 <body>
-    
+
     <section id="main-user-container">
 
         <section id="user-profile" class="aero-panel">
             <section id="username-section" class="aero-title">
-               <h2>@{{displayname}}</h2>
+                <h2>@{{displayname}}</h2>
             </section>
 
             <section id="photo-section">
-                <img 
-                    src="/imagens/photos/{{profilePhoto}}" 
-                    alt="Foto de perfil"
-                    class="profile-photo"
-                />
+                <img src="/imagens/photos/{{profilePhoto}}" alt="Foto de perfil" class="profile-photo" />
             </section>
 
             <section id="mood-section">
@@ -63,7 +60,7 @@
 
         <section id="about" class="aero-panel">
             <section id="about-title-section" class="aero-title">
-               <h2>About me</h2>
+                <h2>About me</h2>
             </section>
 
             <p id="bio">{{bio}}</p>
@@ -73,21 +70,21 @@
     <section id="friends-interest">
         <section id="user-interests" class="aero-panel">
             <section id="user-interests-title-section" class="aero-title">
-                   <h2>Interests</h2>
+                <h2>Interests</h2>
             </section>
-        
+
             <section id="interests-list">
                 {{#each interests}}
-                    <p class="interest-text">{{this.name}}</p>
+                <p class="interest-text">{{this}}</p>
                 {{/each}}
             </section>
         </section>
 
         <section id="user-friends" class="aero-panel">
             <section id="user-friends-title-section" class="aero-title">
-                   <h2>Friends</h2>
-                </section>
-            
+                <h2>Friends</h2>
+            </section>
+
             <section id="friends-section">
                 <div class="friend-name">
                     <p>ihaven</p>
@@ -112,4 +109,5 @@
         </section>
     </section>
 </body>
+
 </html>
