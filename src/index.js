@@ -1,4 +1,5 @@
 import express from "express";
+import "dotenv/config";
 import { create } from "express-handlebars";
 import session from "express-session";
 import path from "path";
@@ -47,6 +48,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "../public")));
+
+if (!process.env.SESSION_SECRET) {
+  throw new Error("Falta SESSION_SECRET en el .env");
+}
 
 /* =======================
    Sesiones

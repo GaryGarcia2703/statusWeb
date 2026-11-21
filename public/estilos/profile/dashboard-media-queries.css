@@ -108,7 +108,7 @@
 
     section#about {
         width: 48vw;
-        height: 67vw;
+        height: auto;
         margin-right: 2vw;
     }
 

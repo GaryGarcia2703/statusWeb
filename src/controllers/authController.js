@@ -121,7 +121,7 @@ export class UserController {
       mood: user.mood,
       bio: user.bio,
       links: user.links,
-      profilePhoto: user.profilePhoto || "/profile/king.jpg"
+      profilePhoto: user.profilePhoto || "noprofile.png",
     });
   };
 
